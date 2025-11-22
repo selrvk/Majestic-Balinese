@@ -7,7 +7,7 @@ const Gallery = () => {
   const [lightbox, setLightbox] = useState<string | null>(null);    
 
   const images = [
-    { src: "https://scontent.fmnl45-2.fna.fbcdn.net/v/t39.30808-6/530313685_122119939214943850_714867887097817550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AJ3G9wgmgOoQ7kNvwHl5_OF&_nc_oc=Adm9vOooO2L18sXnSPHjTLqQi9BNZM4h_1CTucVbtKZM3mVo-qz3Xi1oe6tJuljR5xlEvcjBLTt_DHrsVbrlT58i&_nc_zt=23&_nc_ht=scontent.fmnl45-2.fna&_nc_gid=05kFcH6w1KlDhRu0Z8A__A&oh=00_Afjob4Uox-3C4-1MUOhAYN6DjetSadjPcilF18FKdKJTdQ&oe=69249E82", alt: "Main House" },
+    { src: "https://scontent.fmnl45-2.fna.fbcdn.net/v/t39.30808-6/530313685_122119939214943850_714867887097817550_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=AJ3G9wgmgOoQ7kNvwHl5_OF&_nc_oc=Adm9vOooO2L18sXnSPHjTLqQi9BNZM4h_1CTucVbtKZM3mVo-qz3Xi1oe6tJuljR5xlEvcjBLTt_DHrsVbrlT58i&_nc_zt=23&_nc_ht=scontent.fmnl45-2.fna&_nc_gid=05kFcH6w1KlDhRu0Z8A__A&oh=00_Afjob4Uox-3C4-1MUOhAYN6DjetSadjPcilF18FKdKJTdQ&oe=69249E82", alt: "Main Mansion" },
     { src: "https://scontent.fmnl45-1.fna.fbcdn.net/v/t39.30808-6/531065277_122121863294943850_219667075363471330_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BFR55jf_LsUQ7kNvwFOZeWR&_nc_oc=AdlzwJLeeFRKdfZaNmbhzEU0fq_jGIXsoWRhUkBOAnc23Nv-Kin3jZCUTTfi75MPS6vSFaOOyb_RjksP1AbKO0Kl&_nc_zt=23&_nc_ht=scontent.fmnl45-1.fna&_nc_gid=6aSnf1wuNcOWQw_ZdoOacg&oh=00_AfhV9_YIW0k9LhTg4A9gIKXelFsogUeFCsbSs1XzmefGug&oe=6924C604", alt: "Main Pool" },
     { src: "https://scontent.fmnl13-1.fna.fbcdn.net/v/t39.30808-6/531616913_122121863366943850_1712587540747140503_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=XC2k_5GZYw0Q7kNvwE_gGTl&_nc_oc=Adm2pue4R1qsv-4fAAhpzLWrlhcByoRXzepnhQgmw6o0OtArpL3aV5M9oZRuMl1LOJNS8HQvNckGL2NJgk7a4Dh7&_nc_zt=23&_nc_ht=scontent.fmnl13-1.fna&_nc_gid=NjRXOyXmfUWVcd6vyLtAww&oh=00_Afjit8ThGy3bc95oI7rZTKvb8j4VnsJC616Xc5ns0I-lOw&oe=6924AEA6", alt: "Chairs and Beach Umbrellas" },
     { src: "https://scontent.fmnl45-2.fna.fbcdn.net/v/t39.30808-6/532279992_122121845768943850_4328875634290897269_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=l3zJdshKWuMQ7kNvwFz4uKk&_nc_oc=AdmXdnoBeKnONrNxsAp0NqLA4l4C95MN_ZlWn2Xcn5nbEybm6v9qNzgXKWu5TzzKfVfeW4XgIb1YlA-CiC7wtJuL&_nc_zt=23&_nc_ht=scontent.fmnl45-2.fna&_nc_gid=10PgBN7y-Ep-PQIKjAQPCg&oh=00_Afi_VLGVfREDwcyIUTTUDLUThCbgfAwJnXgL_EqiO9lYrw&oe=6924BA4C", alt: "Balinese Gazebo" },
@@ -20,6 +20,9 @@ const Gallery = () => {
 
   return (
     <>
+
+      <h1 className="text-4xl mt-15 mb-15">Gallery</h1>
+
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8">
         {images.map((img, i) => (
           <div

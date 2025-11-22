@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         <nav>
-          <ul className="sm:flex flex-row gap-6">
+          <ul className="sm:flex flex-row gap-6 text-lg font-medium hidden">
             <a href="#home"><li>Home</li></a>
             <a href="#gallery"><li>Gallery</li></a>
             <a href="#about"><li>About</li></a>
