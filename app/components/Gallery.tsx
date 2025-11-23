@@ -2,8 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+import { useRef } from "react";
 
 const Gallery = () => {
+
+  const galleryRef = useRef(null);
+  useScrollAnimation(galleryRef, 0.2);
+
   const [lightbox, setLightbox] = useState<string | null>(null);    
 
   const images = [
@@ -23,7 +29,7 @@ const Gallery = () => {
 
       <h1 className="text-4xl mt-15 mb-15 font-quintessential">Gallery</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 bg-orange-200">
+      <div ref={galleryRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 bg-orange-200">
         {images.map((img, i) => (
           <div
             key={i}

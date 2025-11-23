@@ -1,7 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Mail } from "lucide-react";
+import useScrollAnimation from "../hooks/useScrollAnimation";
+import { useRef } from "react";
 
 export default function Contact() {
+
+  const contactRef = useRef(null);
+  useScrollAnimation(contactRef, 0.2);
+
   return (
     <>
       <h1
@@ -21,7 +27,7 @@ export default function Contact() {
         />
 
         {/* OVERLAY CARD */}
-        <div
+        <div ref={contactRef} 
           className="
           absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
           w-[90%] max-w-6xl

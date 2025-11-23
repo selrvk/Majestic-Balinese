@@ -135,3 +135,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+    .slide-in {
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 700ms;
+    }
+    .slide-out {
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all 700ms;
+    }
+  }
