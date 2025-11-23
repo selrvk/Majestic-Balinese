@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Italianno} from "next/font/google";
+import { Charm, Geist, Geist_Mono, Italianno, Quintessential} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,6 +19,13 @@ const italianno = Italianno({
   display: "swap",
 });
 
+const quintessential = Quintessential({
+  subsets: ["latin-ext"],
+  weight: "400",
+  variable: "--font-quintessential",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Majestic Balinese Mansion",
   description: "Majestic Balinese Mansion",
@@ -32,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${italianno.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${italianno.variable} ${quintessential.variable} antialiased`}
       >
         {children}
       </body>
