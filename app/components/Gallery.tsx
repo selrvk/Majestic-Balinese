@@ -23,7 +23,7 @@ const Gallery = () => {
 
       <h1 className="text-4xl mt-15 mb-15 font-quintessential">Gallery</h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 bg-orange-200">
         {images.map((img, i) => (
           <div
             key={i}
