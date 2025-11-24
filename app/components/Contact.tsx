@@ -32,7 +32,7 @@ export default function Contact() {
           className="
             lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2
             mx-auto mt-10 lg:mt-0
-            w-[92%] max-w-5xl
+            w-[92%] max-w-6xl
             grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
             gap-8 md:gap-10
             bg-white/40 backdrop-blur-xl
