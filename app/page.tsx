@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import { motion, useAnimation } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import heroImage from "./../public/balinese-photos/mainhero.jpg"
 
 export default function Home() {
   const majesticRef = useRef(null);
@@ -42,7 +43,7 @@ export default function Home() {
           <div className="relative w-full">
 
             <img
-              src="https://scontent.fmnl45-1.fna.fbcdn.net/v/t39.30808-6/529710804_122119939118943850_1053819985797276166_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGQZWdb_WtDJar3zujtr9Rszji-sKxhSNPOOL6wrGFI0yAgmGnq4EVdpxJ2isgz7SHHzbCCVv1N-OHCwk-mzV3n&_nc_ohc=2SMyG5sfqD0Q7kNvwG-XBBj&_nc_oc=Adk-5_J8wPndyngpPRGdDSE2QAW2deejKhWB5lgIIOP0ZNsviD2YNMX6oPt8qKMLqR_f8tIjTedmE11INaW43cJP&_nc_zt=23&_nc_ht=scontent.fmnl45-1.fna&_nc_gid=B01nEDE0AWKXqZKWZHZzkA&oh=00_AfjYKUcZKRkFy_nwUEY51NSXuTB4-B5CwhSfWisUnZPTdg&oe=6927888A"
+              src={heroImage.src}
               alt="Majestic Balinese Mansion Home"
               className="z-1 opacity-60 object-cover w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] xl:h-[770px] 2xl:h-[1000px] brightness-75"
             />
