@@ -22,14 +22,14 @@ const Gallery = () => {
   const [lightbox, setLightbox] = useState<string | null>(null);    
 
   const images = [
-    { src: mainMansion, alt: "Main Mansion" },
-    { src: mainPool, alt: "Main Pool" },
-    { src: chairsUmbrellas, alt: "Chairs and Beach Umbrellas" },
-    { src: balineseGazebos, alt: "Balinese Gazebo" },
-    { src: grandDiningGazebo, alt: "Dining Gazebo" },
-    { src: stairs, alt: "Stairs to the Beach" },
-    { src: openArea, alt: "Open Area" },
-    { src: kayaks, alt: "Kayaks" },
+    { src: mainMansion.src, alt: "Main Mansion" },
+    { src: mainPool.src, alt: "Main Pool" },
+    { src: chairsUmbrellas.src, alt: "Chairs and Beach Umbrellas" },
+    { src: balineseGazebos.src, alt: "Balinese Gazebo" },
+    { src: grandDiningGazebo.src, alt: "Dining Gazebo" },
+    { src: stairs.src, alt: "Stairs to the Beach" },
+    { src: openArea.src, alt: "Open Area" },
+    { src: kayaks.src, alt: "Kayaks" },
 
   ];
 
