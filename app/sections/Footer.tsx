@@ -11,7 +11,7 @@ export default function Footer() {
 
                 <div className='flex flex-row items-center'>
                     <p> Developed by </p>
-                    <a href='https://github.com/selrvk' target='_blank' rel='noopener noreferrer'>
+                    <a href='https://selrvk.dev' target='_blank' rel='noopener noreferrer'>
                         <img src={logo.src} alt="Selrvk Logo" className="h-20 w-auto"/>
                     </a>
                 </div>
