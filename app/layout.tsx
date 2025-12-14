@@ -28,6 +28,9 @@ const quintessential = Quintessential({
 
 export const metadata: Metadata = {
   title: "Majestic Balinese Mansion",
+  icons:{
+    icon: "./assets/Majestic-Logo-Black.png",
+  },
   description: "Majestic Balinese Mansion",
 };
 

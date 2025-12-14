@@ -17,9 +17,15 @@ export default function CarouselCard({title , description, imageUrl}: CarouselCa
                 alt={title}
                 className="w-full md:w-[50%]"
             />
-            <div className="flex flex-col justify-center">
-                <h3 className="mt-3 text-lg font-semibold font-quintessential">{title}</h3>
-                <p className="text-sm text-muted-foreground mt-5">{description}</p>
+            <div className="flex flex-col text-start ml-20">
+                <h3 className="mt-3 text-4xl font-semibold font-quintessential text-amber-950/80">{title}</h3>
+                <p className="text-md text-muted-foreground mt-5">{description}</p>
+                
+                <a href="/amenities">
+                    <h2 className="mt-40 text-amber-950 underline underline-offset-6 cursor-pointer">
+                        Learn more
+                    </h2>
+                </a>
             </div>
             
         </div>

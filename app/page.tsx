@@ -5,6 +5,7 @@ import Footer from "./sections/Footer";
 import Amenities from "./sections/Amenities";
 import Hero from "./sections/Hero";
 import Traits from "./sections/Traits";
+import Map from "./sections/Map";
 
 export default function Home() {
 
@@ -28,6 +29,10 @@ export default function Home() {
 
       <section className="text-center pt-10" id="gallery">
         <Gallery />
+      </section>
+
+      <section id="map">
+        <Map />
       </section>
 
       <section id="contact">
