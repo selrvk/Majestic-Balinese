@@ -44,7 +44,7 @@ export default function Contact() {
             gap-8 md:gap-40
             bg-white/40 backdrop-blur-xl
             p-6 sm:p-8 lg:p-10
-            rounded-2xl shadow-2xl border border-white/50
+            shadow-2xl border border-white/50
           "
         >
         
@@ -57,19 +57,19 @@ export default function Contact() {
 
             <input
               type="text"
-              className="border-amber-700/30 w-full h-12 border rounded-lg pl-3 bg-white/70"
+              className="border-amber-700/30 w-full h-12 border pl-3 bg-white/70"
               placeholder="Your Name"
             />
             <input
               type="email"
-              className="border-amber-700/30 w-full h-12 border rounded-lg pl-3 bg-white/70"
+              className="border-amber-700/30 w-full h-12 border pl-3 bg-white/70"
               placeholder="Your Email"
             />
             <textarea
-              className="border-amber-700/30 w-full h-32 border rounded-lg pl-3 pt-2 bg-white/70"
+              className="border-amber-700/30 w-full h-32 border pl-3 pt-2 bg-white/70"
               placeholder="Your Message"
             />
-            <Button className="bg-amber-950 hover:bg-amber-800 w-full text-amber-50 text-md py-3 rounded-lg">
+            <Button className="bg-amber-950 hover:bg-amber-800 w-full text-amber-50 text-md py-3">
               Submit
             </Button>
           </div>
