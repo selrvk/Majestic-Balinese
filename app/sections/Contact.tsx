@@ -10,28 +10,22 @@ export default function Contact() {
   useScrollAnimation(contactRef, 0.2);
 
   return (
-    <>
+
+    <div className="mt-60">
       <h1
-        className="text-4xl text-center mt-10 font-quintessential tracking-wide text-amber-900"
+        className="text-4xl text-center mt-10 font-quintessential tracking-wide text-amber-950"
         id="contact"
       >
         Contact Us
       </h1>
 
       {/* CONTAINER WITH BACKGROUND */}
-      <div className="relative w-full mt-10">
-
-        {/* BACKGROUND IMAGE */}
-        <img
-          src="https://scontent.fmnl45-2.fna.fbcdn.net/v/t39.30808-6/537569614_122124969176943850_3327517651818192117_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH2r86tvPYVX7WV_I-ca3ewMpYTuFZKnIMylhO4Vkqcg4dv9p9QRCz5ecVriC_Pm_I1PliIhZ7Nj0kP1esLYwsz&_nc_ohc=AwIdQMffymsQ7kNvwGpgQq3&_nc_oc=AdkEiMGHS4Sse32QA6mO_6xxC3sjtb95HFPd3mfGen92oCV_c4WsmLTgtU_KpsozAtC5j7cw_BRXEJpE6qeUEtXn&_nc_zt=23&_nc_ht=scontent.fmnl45-2.fna&_nc_gid=eT5LRBkklhp_9uic3GWMEw&oh=00_AfjyJ5LNBIpT-qRPTEoINFfa1YW0I1gHw8ShD0witOZrXw&oe=6928BA4B"
-          className="hidden lg:block md: w-full h-[650px] object-cover object-center opacity-60"
-        />
+      <div className="flex w-full mt-10 bg-amber-100/50">
 
         {/* OVERLAY CARD */}
         <div
           ref={contactRef}
           className="
-            lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2
             mx-auto mt-10 lg:mt-0
             w-[92%] max-w-6xl
             grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
@@ -125,6 +119,6 @@ export default function Contact() {
 
         </div>
       </div>
-    </>
+    </div>
   );
 }

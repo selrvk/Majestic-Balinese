@@ -4,7 +4,7 @@ export default function Footer() {
 
     return (
 
-        <>
+        <div className='mt-60'>
 
             <footer className="flex flex-row justify-between bg-yellow-950 text-white items-center text-center p-4 mt-10">
                 <p>© 2025 Majestic Balinese Mansion. All rights reserved.</p>
@@ -16,7 +16,7 @@ export default function Footer() {
                     </a>
                 </div>
             </footer>
-        </>
+        </div>
 
     );
 }

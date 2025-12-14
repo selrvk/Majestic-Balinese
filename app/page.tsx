@@ -4,6 +4,7 @@ import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Amenities from "./sections/Amenities";
 import Hero from "./sections/Hero";
+import Traits from "./sections/Traits";
 
 export default function Home() {
 
@@ -16,6 +17,8 @@ export default function Home() {
         <Hero/>
 
       </section>
+
+      <Traits/>
 
       <section className="text-center pt-10" id="amenities">
 

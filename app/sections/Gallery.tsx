@@ -34,11 +34,12 @@ const Gallery = () => {
   ];
 
   return (
-    <>
 
-      <h1 className="text-4xl mt-15 mb-15 font-quintessential">Gallery</h1>
+    <div className="mt-60">
 
-      <div ref={galleryRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 bg-orange-200">
+      <h1 className="text-4xl mt-15 mb-15 font-quintessential text-amber-950">Gallery</h1>
+
+      <div ref={galleryRef} className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-8 bg-amber-100/50">
         {images.map((img, i) => (
           <div
             key={i}
@@ -78,7 +79,7 @@ const Gallery = () => {
           </button>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
