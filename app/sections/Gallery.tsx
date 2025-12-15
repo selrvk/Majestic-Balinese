@@ -1,6 +1,6 @@
 "use client";
 
-import GalleryCarousel from "@/components/GalleryCarousel";
+import GalleryCarousel from "@/components/gallery/GalleryCarousel";
 import { motion } from "framer-motion";
 
 const Gallery = () => {

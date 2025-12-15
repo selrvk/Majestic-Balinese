@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CarouselDemo } from "@/components/CarouselDemo"
+import { CarouselDemo } from "@/components/amenities/CarouselDemo"
 
 export default function Amenities(){
 
@@ -37,7 +37,7 @@ export default function Amenities(){
             </motion.div>
 
             <motion.div
-                className="flex items-center w-full"
+                className="flex w-full"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y:0 }}
                 viewport={{ once: false, amount: 0.2 }}

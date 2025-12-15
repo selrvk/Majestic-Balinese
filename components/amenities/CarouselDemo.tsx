@@ -11,12 +11,12 @@ import CarouselCard from "./CarouselCard"
 const amenities = [
 
     {
-        title: "K A Y A K I N G",
+        title: "KAYAKING",
         description: "Enjoy the experience of kayaking in our waters.",
         imageUrl: "/balinese-photos/amenity-kayak.jpg",
     },
     {
-        title: "B A N A N A B O A T",
+        title: "BANANA BOAT",
         description: "Fun rides on our banana boat for all ages.",
         imageUrl: "/balinese-photos/amenity-banana.webp",
     }
@@ -29,7 +29,7 @@ export function CarouselDemo() {
     <Carousel className="justify-center max-w-[70%] ">
       <CarouselContent >
         {amenities.map((amenity, index) => (
-          <CarouselItem key={index} >
+          <CarouselItem key={index}>
             <CarouselCard
               title={amenity.title}
               description={amenity.description}

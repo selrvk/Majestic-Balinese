@@ -17,7 +17,7 @@ export default function CarouselCard({title , description, imageUrl}: CarouselCa
                 alt={title}
                 className="w-full md:w-[50%]"
             />
-            <div className="flex flex-col text-start ml-20">
+            <div className="flex flex-col text-center">
                 <h3 className="mt-3 text-4xl font-semibold font-quintessential text-amber-950/80">{title}</h3>
                 <p className="text-md text-muted-foreground mt-5">{description}</p>
                 
