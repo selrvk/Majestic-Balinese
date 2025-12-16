@@ -32,7 +32,7 @@ export default function Contact() {
                 className="flex w-full mt-10 bg-amber-100/50"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y:0 }}
-                viewport={{ once: false, amount: 0.5 }}
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ duration: 1, ease: "easeOut" }}
       >
 
@@ -75,7 +75,7 @@ export default function Contact() {
           </div>
 
           {/* CONTACT INFO */}
-          <div className="flex flex-col justify-between justify-self-end text-end ">
+          <div className="flex flex-col justify-between sm:text-end text-start ">
             
             <div>
               <h2 className="text-xl font-semibold text-amber-950 tracking-wide mb-3">
